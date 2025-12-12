@@ -1,0 +1,1 @@
+console.log("Welcome to the First Demo in TypeScript!");
