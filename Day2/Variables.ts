@@ -64,4 +64,35 @@ console.log(z); // Output: 30
 //3) Re-declaration:
 // var - allows re-declaration
 //let, const - do not allow re-declaration(make code safer)
+var city = "New York";
+var city = "Los Angeles"; // Re-declaration allowed
+console.log(city); // Output: Los Angeles
+let country = "USA";
+//let country = "Canada"; // Error: Cannot redeclare block-scoped variable 'country'
+console.log(country); // Output: USA
+const pi = 3.14;
+//const pi = 3.14159; // Error: Cannot redeclare block-scoped variable 'pi'
+console.log(pi); // Output: 3.14    
+//4) Re-initialization/Re-assignment:
+// var, let - allow re-assignment
+// const - do not allow re-assignment(make code safer)
+var score = 100;    
+score = 150; // Re-assignment allowed
+console.log(score); // Output: 150
+let level = 1;
+level = 2;
+console.log(level); // Output: 2
+const gravity = 9.8;
+//gravity = 10; // Error: Assignment to constant variable.
+console.log(gravity); // Output: 9.8
+//5) Hoisting:
+// var - hoisted and initialized with undefined
+// let, const - hoisted but not initialized (Temporal Dead Zone)
+//console.log(a); // Output: undefined (due to hoisting)
+var a = 5;  
+//console.log(b); // Error: Cannot access 'b' before initialization
+let b = 10;
+//console.log(c); // Error: Cannot access 'c' before initialization
+const c = 15;
+
 
