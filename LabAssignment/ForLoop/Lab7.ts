@@ -50,7 +50,7 @@ for (let i: number = 1; i <= 100; i++) {
 // 7. Count Number of Digits in a Number
 let number7: number = 123456; // You can change this value to test with a different number.
 let countDigits: number = 0;
-for ( num2 = number7; num2 > 0; num2 = Math.floor(num2 / 10)) { 
+for (let num = number7; num > 0; num = Math.floor(num / 10)) { 
     countDigits++;
 }
 console.log(`Number of digits in ${number7} is: ${countDigits}`);
@@ -58,8 +58,8 @@ console.log(`Number of digits in ${number7} is: ${countDigits}`);
 // 8. Find Sum of Digits in a Number
 let number8: number = 78945; // You can change this value to test with a different number.
 let sumDigits: number = 0;
-for ( num1 = number8; num1 > 0; num1 = Math.floor(num1 / 10)) { 
-    let digit: number = num1 % 10;   
+for (let num = number8; num > 0; num = Math.floor(num / 10)) { 
+    let digit: number = num % 10;   
     sumDigits += digit;   
 }
 console.log(`Sum of digits in ${number8} is: ${sumDigits}`);
